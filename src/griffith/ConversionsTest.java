@@ -28,4 +28,11 @@ public class ConversionsTest {
         assertEquals(-456, conv.stringToInteger("-456"));
         assertThrows(NumberFormatException.class, () -> conv.stringToInteger("abc"));
     }
+    
+    @Test
+    public String integerToString(int val) {
+        return String.valueOf(val);
+    }
+    
+    
 }

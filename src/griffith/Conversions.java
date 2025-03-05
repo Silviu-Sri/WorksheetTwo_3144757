@@ -14,10 +14,10 @@ public class Conversions {
         return Integer.parseInt(val);
     }
     public String integerToString(int val) {
-        return null;
+        return "";
     }
 
     public String switchCase(String input) {
-        return null;
+        return "";
     }
 }
