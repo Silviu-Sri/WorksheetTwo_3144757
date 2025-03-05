@@ -10,10 +10,9 @@ public class Conversions {
         return dollar * 0.93;
     }
 
-    public int stringToInteger(String val) {
-        return 0;
+	public int stringToInteger(String val) {
+        return Integer.parseInt(val);
     }
-
     public String integerToString(int val) {
         return null;
     }
