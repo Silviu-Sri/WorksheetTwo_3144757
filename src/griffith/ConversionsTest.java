@@ -30,9 +30,12 @@ public class ConversionsTest {
     }
     
     @Test
-    public String integerToString(int val) {
-        return String.valueOf(val);
+    public void testIntegerToString() {
+        Conversions conv = new Conversions();
+        assertEquals("123", conv.integerToString(123));
+        assertEquals("-456", conv.integerToString(-456));
+        assertEquals("0", conv.integerToString(0));
     }
-    
-    
 }
+    
+    
