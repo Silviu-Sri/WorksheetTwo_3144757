@@ -20,4 +20,12 @@ public class ConversionsTest {
         assertEquals(4.65, conv.dollarToEuro(5), 0.01);
         assertEquals(0.00, conv.dollarToEuro(0), 0.01);
     }
+    
+    @Test
+    public void testStringToInteger() {
+        Conversions conv = new Conversions();
+        assertEquals(123, conv.stringToInteger("123"));
+        assertEquals(-456, conv.stringToInteger("-456"));
+        assertThrows(NumberFormatException.class, () -> conv.stringToInteger("abc"));
+    }
 }
