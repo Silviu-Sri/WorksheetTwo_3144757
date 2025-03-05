@@ -13,8 +13,8 @@ public class Conversions {
 	public int stringToInteger(String val) {
         return Integer.parseInt(val);
     }
-    public String integerToString(int val) {
-        return "";
+	public String integerToString(int val) {
+        return String.valueOf(val);
     }
 
     public String switchCase(String input) {
